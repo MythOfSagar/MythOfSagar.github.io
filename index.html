@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagar</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/44d9f098ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+   
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/s__logo.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="contact__socials">
+        
+        <a href="https://github.com/sagar1079" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sagar-wankhade-171274210/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="contact__email"
+          href="mailto:sagarwankhade896@gmail.com"
+          target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <!-- <i id="light" class="fa-regular fa-lightbulb"></i> -->
+      </div>
+      <div class="container">
+        <nav>
+          <!-- <a class="logo" href=""><span>Dani</span>jel S.</a> -->
+          <a class="logo" href="#"
+            ><img class="slidein" src="img/s__logo.png" alt="logo"
+          /></a>
+          <ul id="sideMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact & Resume</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div id="nameSagar" class="header__info">
+          <!-- <i class="fa-solid fa-code"></i> -->
+          <h2>
+            Hi, my name is <br />
+            <h1>Sagar Wankhade</h1>
+          </h2>
+
+          <h2 class="slide_text">Full-Stack Web Developer</h2>
+          <p>
+            View my projects while you're here, <br />
+            and let's see what we can <span>create together</span>.
+          </p>
+          <a class="header__arrow" href="#about"
+            ><i class="fa-sharp fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about__col-1">
+            <a href="#services">
+              <h6 id="avatar"></h6>
+              <img
+                class="about__picture"
+                src="https://avatars.githubusercontent.com/u/105979852?v=4"
+                alt="Me animated using laptop"
+            /></a>
+          </div>
+          <div class="about__col-2">
+            <h2 class="about__title">About Me</h2>
+            
+            <p>
+
+             Enthusiastic Full-Stack Developer with more than <span>1500+ hours</span> of coding and <span>1200+ hours</span> of DSA hands on practice.
+             Like to solve Data Structure and Algorithims problems. 
+            </p>
+            <br />
+            <p>
+              Looking forward to work with an organisation where I can enhance my skills as a developer.
+            </p>
+            <br />
+            
+
+            <a id="somethingSpecial" href="#contact" class="portfolio__btn"
+              >Let's Make Something Special</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h6></h6>
+        <h2 class="about__title">My Skills</h2>
+        <div id="servicesDiv" class="services__list">
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- GitStatistics Section -->
+    <section id="statistics">
+      <div class="container">
+        <h6></h6>
+        <h2 class="about__title">My Statistics</h2>
+        <div class="statsIMG">
+          <img  src="img/GitStats.png" alt="">
+          <img  src="img/GitLang.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- GitCalender Section -->
+    <section>
+      <div class="container">
+        <h6></h6>
+        <h2 class="about__title">My Calender</h2>
+      </div>
+        <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="about__title">My Projects</h2>
+        <p class="portfolio__info">
+          Here are couple of my <span>projects</span>, feel free to
+          look around.
+        </p>
+        <div class="portfolio__worklist">
+
+          
+
+          <div class="individualProjects">
+            <div class="portfolio__worklist-work">
+              <img src="img/asos.png" alt="Shine" />
+              <div class="portfolio__worklist-layer">
+                <h2>Asos Clone</h2>
+              </div>
+            </div>
+            <div class="projectIcons">
+              <a href="https://github.com/Sagar1079/asos_project" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a><h2>Asos Clone</h2><a href="https://stirring-marzipan-5d4585.netlify.app" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+            <h4>Asos.com is a complete fashion and attire speacialist website,
+              on which I have developed cart and payment checkout page.</h4>
+            <h4><span>Tech Stack:</span>Javascript | Html | CSS</h4>
+          </div>
+
+
+
+          <div class="individualProjects">
+            <div class="portfolio__worklist-work">
+              <img src="img/blindBeauty.png" alt="Shine" />
+              <div class="portfolio__worklist-layer">
+                <h2>Blind Beauty</h2>
+              </div>
+            </div>
+            <div class="projectIcons">
+              <a href="https://github.com/Sagar1079/legit-dust-8169" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a><h2>Blind Beauty</h2><a href="https://cute-clafoutis-8268f6.netlify.app" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+            <h4>Blind Beauty is a cosmetic website,
+              on which I have developed
+               a signup/login page and a products page.</h4>
+            <h4><span>Tech Stack:</span>React | Javascript | Html | CSS</h4>
+          </div>
+
+
+
+          <div class="individualProjects">
+            <div class="portfolio__worklist-work">
+              <img src="img/indeed.png" alt="Shine" />
+              <div class="portfolio__worklist-layer">
+                <h2>Indeed Clone</h2>
+              </div>
+            </div>
+            <div class="projectIcons">
+              <a href="https://github.com/Sagar1079/right-chickens-9363" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a><h2>Indeed Clone</h2><a href="https://strong-rolypoly-7a7c64.netlify.app" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+            <h4>Indeed.com is Online Job and Recruitment Portal,
+              on which I have developed signup/login functionality.</h4>
+            <h4><span>Tech Stack:</span>React | Javascript | Html | CSS</h4>
+          </div>
+
+          
+          
+          <div class="individualProjects">
+          <div class="portfolio__worklist-work">
+            <img src="img/shine.png" alt="Shine" />
+            <div class="portfolio__worklist-layer">
+              <h2>Shine Clone</h2>
+            </div>
+          </div>
+          <div class="projectIcons">
+            <a href="https://github.com/Sagar1079/massive-things-7112" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a><h2>Shine Clone</h2><a href="https://bright-manatee-d1b8be.netlify.app" target="_blank"
+            ><i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></a>
+        </div>
+          <h4>Shine.com is Online Job and Recruitment Portal,
+            on which I have developed signup/login functionality.
+          </h4>
+          <h4><span>Tech Stack:</span>React | Javascript | Html | CSS</h4>
+        </div>
+
+          
+      </div>
+      <a
+          href="https://github.com/sagar1079"
+          class="portfolio__btn"
+          target="_blank"
+          >See More</a
+        >
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div id="contactDetails" class="row">
+          <div class="contact__left">
+           
+            <h2 id="contactMe" class="about__title">Contact Me</h2>
+            <p>
+             Please utilize the form if
+              you have any more requests or inquiries.
+            </p>
+            <a
+              class="contact__email"
+              href="mailto:sagarwankhade896@gmail.com"
+              target="_blank"
+              ><i class="fa-regular fa-envelope"></i>sagarwankhade896@gmail.com</a
+            >
+            <div class="contact__socials">
+              <a href="https://github.com/sagar1079" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sagar-wankhade-171274210" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="img/Sagar_Wankhade_Resume.pdf"
+              target="_blank"
+              download="Sagar_Wankhade_Resume.pdf"
+              class="portfolio__btn contact__btn"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact__right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                disabled
+                name="Message"
+                cols="20"
+                rows="5"
+                placeholder="Type your message here"
+              ></textarea>
+              <button type="submit" class="portfolio__btn contact__btn">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+  <script src="main.js"></script>
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<script>
+  GitHubCalendar(".calendar", "sagar1079");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "sagar1079", { responsive: true });
+
+  // Use a proxy
+  GitHubCalendar(".calendar", "sagar1079", {
+     proxy (sagar1079) {
+       return fetch(`https://your-proxy.com/github?user=${sagar1079}`)
+     }
+  }).then(r => r.text())
+</script>
+  <!-- Form Script -->
+</html>
