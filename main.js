@@ -14,7 +14,9 @@ uploadSkills()
 
 
 
-
+function openResume(){
+  window.open("https://drive.google.com/file/d/1fNp6Hs_BnTyJ8irjtbHlPhkTkV_qJxzC/view?usp=share_link")
+}
 
 
 
