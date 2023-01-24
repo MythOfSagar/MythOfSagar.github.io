@@ -455,6 +455,10 @@
     color: #efefef;
     text-decoration: none;
   }
+.contact__mobile {
+    color: #efefef;
+    text-decoration: none;
+  }
   #contact p {
     line-height: 150%;
     font-size: 20px;
