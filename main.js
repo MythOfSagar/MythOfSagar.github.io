@@ -21,11 +21,6 @@ function openResume(){
 
 
 
-
-
-
-
-
 function uploadSkills(){
 let dataSkills=[
 {img:"https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg","title":"HTML 5"},
@@ -40,7 +35,7 @@ let dataSkills=[
 {img:"https://chiranjeev-thapliyal.vercel.app/svg/material-ui.svg","title":"Material UI"},
 {img:"https://chiranjeev-thapliyal.vercel.app/svg/git.svg","title":"Git"}
 ]
-let serviceslist=document.getElementById("servicesDiv")
+let skills_learnedlist=document.getElementById("skills_learnedDiv")
   
   dataSkills.map((skill)=>{
     let div=document.createElement("div")
@@ -56,6 +51,6 @@ let serviceslist=document.getElementById("servicesDiv")
     image.setAttribute("src",skill.img)
 
     div.append(image,title)
-    serviceslist.append(div)
+    skills_learnedlist.append(div)
   })
 }
