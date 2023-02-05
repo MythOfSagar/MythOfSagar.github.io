@@ -247,16 +247,16 @@
   .about__tab-contents.active-tab {
     display: block;
   }
-  #about .portfolio__btn {
+  #about .projects_made__btn {
     float: left;
     padding: 15px 30px;
   }
   /* My Service Section */
-  #services {
+  #skills_learned {
     padding: 30px 0;
     margin-top: -60px;
   }
-  #services h6{margin-bottom: 10px;}
+  #skills_learned h6{margin-bottom: 10px;}
 
   #mySkills{
     margin-bottom:-500px;
@@ -286,14 +286,14 @@
       margin-top: 25px;
     }
 
-  .services__list {
+  .skills_learned__list {
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     gap: 40px;
     max-width: fit-content;
     margin-top: 40px;
   }
-  .services__list div {
+  .skills_learned__list div {
     background-color: #2c2b2c;
     padding: 40px;
     font-size: 16px;
@@ -303,16 +303,16 @@
     transition: all ease-in-out 0.6s;
     cursor: pointer;
   }
-  .services__list h3 {
+  .skills_learned__list h3 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  .services__list img{
+  .skills_learned__list img{
     height: 50px;
   }
 
-  .services__list div a {
+  .skills_learned__list div a {
     text-decoration: none;
     color: #efefef;
     font-size: 12px;
@@ -320,52 +320,52 @@
     display: inline-block;
     border-bottom: 1px solid #efefef;
   }
-  .services__list div:hover {
+  .skills_learned__list div:hover {
     background: #8a2be2;
     transform: translateY(-10px);
     transition: all ease-in-out 0.6s;
   }
-  .services__list p {
+  .skills_learned__list p {
     line-height: 150%;
   }
-  .services__list i {
+  .skills_learned__list i {
     font-size: 50px;
     margin-bottom: 20px;
   }
-  /* Portfolio Section */
-  #portfolio {
+  /* projects_made Section */
+  #projects_made {
     padding: 50px 0;
   }
-  #portfolio span {
+  #projects_made span {
     color: #8a2be2;
   }
-  .portfolio__worklist {
+  .projects_made__worklist {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     margin-top: 50px;
   }
-  .portfolio__worklist-work {
+  .projects_made__worklist-work {
     height: fit-content;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
   }
-  .portfolio__info {
+  .projects_made__info {
     font-size: 20px;
     margin-top: 20px;
   }
-  .portfolio__worklist-work img {
+  .projects_made__worklist-work img {
     width: 100%;
     border-radius: 10px;
     display: inline-block;
     transition: all ease-in-out 0.5s;
   }
-  .portfolio__worklist-work:hover img {
+  .projects_made__worklist-work:hover img {
     transform: scale(1.2);
     transition: all ease-in-out 0.5s;
   }
-  .portfolio__worklist-layer {
+  .projects_made__worklist-layer {
     width: 100%;
     height: 0%;
     background-color: rgba(44, 43, 44, 0.8);
@@ -384,11 +384,11 @@
     font-size: 14px;
     transition: all ease-in-out 0.5s;
   }
-  .portfolio__worklist-layer h3 {
+  .projects_made__worklist-layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
   }
-  .portfolio__worklist-layer a {
+  .projects_made__worklist-layer a {
     margin-top: 40px;
     color: #8a2be2;
     text-decoration: none;
@@ -398,15 +398,15 @@
     height: 50px;
     border-radius: 50%;
   }
-  .portfolio__worklist-layer i {
+  .projects_made__worklist-layer i {
     font-size: 20px;
     margin: 15px auto;
   }
-  .portfolio__worklist-work:hover .portfolio__worklist-layer {
+  .projects_made__worklist-work:hover .projects_made__worklist-layer {
     height: 100%;
     transition: 1s;
   }
-  .portfolio__btn {
+  .projects_made__btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -418,7 +418,7 @@
     text-transform: uppercase;
     transition: all ease-in-out 0.5s;
   }
-  .portfolio__btn:hover {
+  .projects_made__btn:hover {
     background-color: #8a2be2;
     transition: all ease-in-out 0.5s;
   }
@@ -476,12 +476,12 @@
     transform: translateY(-5px);
     transition: transform 0.6s;
   }
-  .portfolio__btn.contact__btn {
+  .projects_made__btn.contact__btn {
     display: inline-block;
     background: #131312;
     transition: all ease-in-out 0.5s;
   }
-  .portfolio__btn.contact__btn:hover {
+  .projects_made__btn.contact__btn:hover {
     background-color: #8a2be2;
     color: #efefef;
     /* transform: translateY(-1px); */
@@ -569,22 +569,22 @@
   }
   nav { padding-left:40px ;}
 
-  #portfolio{
+  #projects_made{
     margin-top: -30px;
     margin-bottom: -100px;
   }
   #contactMe{
     font-size: 40px;
   }
-  .services__list {
+  .skills_learned__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
   }
-  .services__list h3{
+  .skills_learned__list h3{
      font-size: 25px;
   }
-  .services__list img{margin-top: 10px;}
-  .services__list div{
+  .skills_learned__list img{margin-top: 10px;}
+  .skills_learned__list div{
     width: 140px;
     height: 150px;
     text-align: center;
@@ -601,7 +601,7 @@
       width: 250px;
     }
     
-    .portfolio__worklist {
+    .projects_made__worklist {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 40px;
@@ -677,7 +677,7 @@
       margin-top: 0px;
       margin-bottom: 0px;
     }
-    #about .portfolio__btn {
+    #about .projects_made__btn {
       padding: 10px 10px;
     }
     #avatar{
@@ -704,19 +704,19 @@
     .contact__right {
       flex-basis: 100%;
     }
-    #services {
+    #skills_learned {
       margin-top: 300px;
       margin-bottom: -30px;
     }
-    .services__list {
+    .skills_learned__list {
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       
     }
-    #portfolio{
+    #projects_made{
       margin-bottom: -150px;
     }
-    .services__list div{
+    .skills_learned__list div{
      
       text-align: center;
       justify-content: center;
@@ -724,10 +724,10 @@
       padding: 0%;
       height: 100px;
     }
-    .services__list div img{
+    .skills_learned__list div img{
       width: 50px;
     }
-    .services__list div h3{
+    .skills_learned__list div h3{
       font-size: 13px;
     }
     .statsIMG{display: flex; flex-direction: column;gap: 10px;}
@@ -739,11 +739,11 @@
     .statsIMG{display: flex; flex-direction: column;gap: 10px;}
     #nameSagar h1{font-size: 37px;}
     #nameSagar h2{font-size: 21px;}
-    #services {
+    #skills_learned {
       margin-top: 340px;
       margin-bottom: 30px;
     }
-    #servicesDiv{
+    #skills_learnedDiv{
       margin-top: 10px;}
 
       .contact__left{
@@ -757,18 +757,18 @@
     #footer{width: 100%;
       background-color: #2c2b2c;
     }
-    #services {
+    #skills_learned {
       margin-top: 340px;
     }
-    .services__list {
+    .skills_learned__list {
       grid-template-columns: repeat(4, 1fr);
       gap: 15px;
     }
-    .services__list div img{
+    .skills_learned__list div img{
       margin-top: 10px;
       height: 30px;
     }
-    .services__list div{
+    .skills_learned__list div{
       width: 55px;
     }
    
