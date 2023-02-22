@@ -11,15 +11,9 @@ function closeMenu() {
 
 uploadSkills()
 
-
-
-
 function openResume(){
   window.open("https://drive.google.com/file/d/1fNp6Hs_BnTyJ8irjtbHlPhkTkV_qJxzC/view?usp=share_link")
 }
-
-
-
 
 function uploadSkills(){
 let dataSkills=[
@@ -42,11 +36,7 @@ let skills_learnedlist=document.getElementById("skills_learnedDiv")
     let image=document.createElement("img")
     let title=document.createElement("h3")
 
-    if(skill.title==="Next.JS" || skill.title==="Express.JS"){
-    image.setAttribute("style","margin-bottom:35px")
-    title.setAttribute("class","express-next")
-  }
-
+   
     title.innerText=skill.title
     image.setAttribute("src",skill.img)
 
