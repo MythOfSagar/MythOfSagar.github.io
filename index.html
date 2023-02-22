@@ -63,7 +63,7 @@
         </nav>
         <div id="nameSagar" class="header__info">
           <!-- <i class="fa-solid fa-code"></i> -->
-          <h2>
+          <h2 >
             Hi, my name is <br />
             <h1>Sagar Wankhade</h1>
           </h2>
@@ -84,13 +84,13 @@
       <div class="container">
         <div class="row">
           <div class="about__col-1">
-            <a href="#skills_learned">
-              <h6 id="avatar"></h6>
+            
               <img
                 class="about__picture"
                 src="https://i.ibb.co/VJk7dLD/profile.png"
                 alt="Me animated using laptop"
-            /></a>
+            />
+           
           </div>
           <div class="about__col-2">
             <h2 class="about__title">About Me</h2>
@@ -120,10 +120,8 @@
     <!-- skills_learned Section -->
     <section id="skills_learned">
       <div class="container">
-        <h6></h6>
         <h2 class="about__title">My Skills</h2>
         <div id="skills_learnedDiv" class="skills_learned__list">
-          
         </div>
       </div>
     </section>
@@ -131,11 +129,18 @@
     <!-- GitStatistics Section -->
     <section id="statistics">
       <div class="container">
-        <h6></h6>
-        <h2 class="about__title">My Statistics</h2>
+        <h2 class="about__title">My GitHub Stats</h2>
         <div class="statsIMG">
-          <img  src="img/GitStats.png" alt="">
-          <img  src="img/GitLang.png" alt="">
+          <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sagar1079&theme=solarized_dark">
+          <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sagar1079&theme=solarized_dark">
+        </div>
+      </div>
+      <div class="container">
+        <h6></h6>
+        <h2 class="about__title">My LeetCode Stats</h2>
+        <div class="LeetCodeStats">
+          <a href="https://www.leetcode.com/Sagar1079" target="_blank" >
+            <img  src="https://leetcard.jacoblin.cool/Sagar1079?theme=nord"/></a>
         </div>
       </div>
     </section>
@@ -155,6 +160,7 @@
     <!-- projects_made Section -->
     <section id="projects_made">
       <div class="container">
+        <h6></h6>
         <h2 class="about__title">My Projects</h2>
         <p class="projects_made__info">
           Here are couple of my <span>projects</span>, feel free to
@@ -340,7 +346,7 @@
      proxy (sagar1079) {
        return fetch(`https://your-proxy.com/github?user=${sagar1079}`)
      }
-  }).then(r => r.text())
+  }).then(r => r)
 </script>
   <!-- Form Script -->
 </html>
