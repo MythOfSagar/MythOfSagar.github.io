@@ -8,7 +8,6 @@ function closeMenu() {
   sideMenu.style.right = "-120px";
 }
 
-
 uploadSkills()
 
 function openResume(){
