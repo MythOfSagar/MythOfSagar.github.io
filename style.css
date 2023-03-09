@@ -87,6 +87,10 @@ nav {
   width: 100%;
 }
 
+#LeetCodeIcon{
+  width: 33px;
+}
+
 nav img {
   width: 60px;
 }
@@ -642,6 +646,7 @@ nav .fa-solid {
   margin-top: 60px;
 }
 
+
 @media only screen and (max-width: 800px) {
   .statsIMG {
     flex-direction: column;
@@ -662,7 +667,11 @@ nav .fa-solid {
   }
 }
 
-@media only screen and (max-width: 500px) {}
+@media only screen and (max-width: 768px) {
+  #LeetCodeIcon{
+    width: 22px;
+  }
+}
 
 @media only screen and (max-width: 400px) {
   .LeetCodeStats img {
