@@ -36,6 +36,8 @@ form.addEventListener("submit", (e) => {
     }else{
       alert("Error Occured Please Contact me through email")
     };
+  }).catch((error) => {
+    alert("Error Occured Please Contact me through email")
   });
 });
 
