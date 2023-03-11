@@ -90,7 +90,11 @@ function uploadSkills() {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg",
       title: "MongoDB",
     },
-    
+    {
+      img: "https://www.svgrepo.com/show/330247/cypress.svg",
+      title: "Cypress",
+    }
+    ,
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/git.svg",
       title: "Git",
