@@ -57,34 +57,34 @@ function uploadSkills() {
   let dataSkills = [
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
-      title: "HTML 5",
+      title: "HTML",
     },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
-      title: "CSS 3",
+      title: "CSS",
     },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
-      title: "Javascript",
+      title: "JavaScript",
     },
     {
       img: "img/typescript.png",
-      title: "Typescript",
+      title: "TypeScript",
     },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/reactjs.svg",
-      title: "React.JS",
+      title: "ReactJS",
     },
-    { img: "img/nextjs-boilerplate-logo.png", title: "Next.JS" },
+    { img: "img/nextjs-boilerplate-logo.png", title: "NextJS" },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
       title: "Redux",
     },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg",
-      title: "Node.JS",
+      title: "NodeJS",
     },
-    { img: "img/expressJs.png", title: "Express.JS" },
+    { img: "img/expressJs.png", title: "ExpressJS" },
     
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg",
