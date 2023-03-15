@@ -73,7 +73,7 @@ function uploadSkills() {
     },
     {
       img: "https://chiranjeev-thapliyal.vercel.app/svg/reactjs.svg",
-      title: "ReactJS",
+      title: "React",
     },
     { img: "img/nextjs-boilerplate-logo.png", title: "NextJS" },
     {
