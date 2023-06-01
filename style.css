@@ -646,6 +646,11 @@ nav .fa-solid {
   margin-top: 60px;
 }
 
+@media only screen and (min-width: 800px) {
+  .LeetCodeStats img {
+    width:clamp(350px, calc(21.875rem + ((1vw - 8px) * 31.8182)), 700px);
+  }
+}
 
 @media only screen and (max-width: 800px) {
   .statsIMG {
