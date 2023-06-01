@@ -56,42 +56,44 @@ function openResume() {
 function uploadSkills() {
   let dataSkills = [
     {
-      img: "img/typescript.png",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png",
       title: "TypeScript",
     },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png",
       title: "JavaScript",
     },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/reactjs.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
       title: "React",
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
       title: "Angular",
     },
-    { img: "img/nextjs-boilerplate-logo.png", title: "NextJS" },
+    { img: "https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail-1.webp", 
+      title: "NextJS" 
+    },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png",
       title: "HTML",
     },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/640px-CSS3_logo.svg.png",
       title: "CSS",
     },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
+      img: "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       title: "Redux",
     },
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png",
       title: "NodeJS",
     },
     { img: "img/expressJs.png", title: "ExpressJS" },
-    
+
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png",
       title: "MongoDB",
     },
     {
@@ -100,11 +102,11 @@ function uploadSkills() {
     }
     ,
     {
-      img: "https://chiranjeev-thapliyal.vercel.app/svg/git.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Git_format.png/640px-Git_format.png",
       title: "Git",
     },
     {
-      img: "img/getpostman.svg",
+      img: "https://cdn.worldvectorlogo.com/logos/postman.svg",
       title: "Postman",
     }
   ];
