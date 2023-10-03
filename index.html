@@ -290,7 +290,7 @@ refreshing mix of diverse topics.
   GitHubCalendar(".calendar", "MythOfSagar")
   GitHubCalendar(".calendar", "MythOfSagar", { responsive: true });
   GitHubCalendar(".calendar", "MythOfSagar", {
-    proxy(MythOfSagar) {
+    proxy(MythOfSagar) { 
       return fetch(`https://your-proxy.com/github?user=${MythOfSagar}`)
     }
   }).then(r => r)
