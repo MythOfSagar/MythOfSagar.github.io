@@ -1,60 +1,65 @@
-let sideMenu = document.getElementById("sideMenu");
 
-function openMenu() {
+
+const sideMenu = document.getElementById("sideMenu");
+
+const openMenu = () => 
+{
   sideMenu.style.right = "0";
 }
 
 const serviceID = "service_7rgik59";
 const templateID = "template_jaswid2";
 
-let clientName = document.querySelector("#clientName");
-let clientEmail = document.querySelector("#clientEmail");
-let clientMessage = document.querySelector("#clientMessage");
+const clientName = document.querySelector("#clientName");
+const clientEmail = document.querySelector("#clientEmail");
+const clientMessage = document.querySelector("#clientMessage");
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => 
+{
   e.preventDefault();
 
-  let name = clientName.value;
-  let email = clientEmail.value;
-  let message = clientMessage.value;
- 
-  console.log(serviceID, templateID, {
-    name,
-    email,
-    message,
-  })
+  const name = clientName.value;
+  const email = clientEmail.value;
+  const message = clientMessage.value;
 
-  emailjs.send(serviceID, templateID, {
+  emailjs.send(serviceID, templateID, 
+  {
     name,
     email,
     message,
-  }).then((response) => {
-    if(response.text==='OK'){
+  }).then((response) => 
+    {
+    if (response.text === 'OK') 
+    {
       alert("Message sent successfully")
-    }else{
+    } else 
+    {
       alert("Error Occured Please Contact me through email")
     };
-  }).catch((error) => {
+  }).catch((error) => 
+  {
     alert("Error Occured Please Contact me through email")
   });
 });
 
-function closeMenu() {
+const closeMenu = () => 
+{
   sideMenu.style.right = "-120px";
 }
 
-uploadSkills();
 
-function openResume() {
+const openResume = () => 
+{
   window.open(
     "https://drive.google.com/file/d/1fNp6Hs_BnTyJ8irjtbHlPhkTkV_qJxzC/view?usp=share_link"
   );
 }
 
-function uploadSkills() {
-  let dataSkills = [
+const uploadSkills = () => 
+{
+  const dataSkills = [
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png",
       title: "TypeScript",
@@ -71,8 +76,9 @@ function uploadSkills() {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
       title: "Angular",
     },
-    { img: "https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail-1.webp", 
-      title: "NextJS" 
+    {
+      img: "https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail-1.webp",
+      title: "NextJS"
     },
     {
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png",
@@ -110,12 +116,13 @@ function uploadSkills() {
       title: "Postman",
     }
   ];
-  let skills_learnedlist = document.getElementById("skills_learnedDiv");
+  const skills_learnedlist = document.getElementById("skills_learnedDiv");
 
-  dataSkills.map((skill) => {
-    let div = document.createElement("div");
-    let image = document.createElement("img");
-    let title = document.createElement("h3");
+  dataSkills.map((skill) => 
+  {
+    const div = document.createElement("div");
+    const image = document.createElement("img");
+    const title = document.createElement("h3");
 
     title.innerText = skill.title;
     image.setAttribute("src", skill.img);
@@ -124,3 +131,34 @@ function uploadSkills() {
     skills_learnedlist.append(div);
   });
 }
+
+const handlePortfolioTitle = () => 
+{
+  const portfolioTitle = document.querySelector('#portfolio-title')
+  const defaultTitle = 'Sagar'
+  console.log(document['hidden'],135)
+  if (typeof document.hidden !== "undefined") 
+  {
+
+    const handleVisibilityChange = () => 
+    {
+      console.log(document['hidden'])
+      if (document['hidden']) 
+      {
+        portfolioTitle.innerText = 'The One U R Looking For'
+      } else 
+      {
+        portfolioTitle.innerText = defaultTitle
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange, false);
+  } else 
+  {
+    // Page Visibility API is not supported
+    portfolioTitle.innerText = defaultTitle
+  }
+}
+
+uploadSkills();
+handlePortfolioTitle();
