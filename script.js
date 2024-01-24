@@ -57,65 +57,9 @@ const openResume = () =>
   );
 }
 
-const uploadSkills = () => 
+const addSkills = (dataSkills) => 
 {
-  const dataSkills = [
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png",
-      title: "TypeScript",
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png",
-      title: "JavaScript",
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
-      title: "React",
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
-      title: "Angular",
-    },
-    {
-      img: "https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail-1.webp",
-      title: "NextJS"
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png",
-      title: "HTML",
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/640px-CSS3_logo.svg.png",
-      title: "CSS",
-    },
-    {
-      img: "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
-      title: "Redux",
-    },
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png",
-      title: "NodeJS",
-    },
-    { img: "img/expressJs.png", title: "ExpressJS" },
 
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png",
-      title: "MongoDB",
-    },
-    {
-      img: "https://www.svgrepo.com/show/330247/cypress.svg",
-      title: "Cypress",
-    }
-    ,
-    {
-      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Git_format.png/640px-Git_format.png",
-      title: "Git",
-    },
-    {
-      img: "https://cdn.worldvectorlogo.com/logos/postman.svg",
-      title: "Postman",
-    }
-  ];
   const skills_learnedlist = document.getElementById("skills_learnedDiv");
 
   dataSkills.map((skill) => 
@@ -160,31 +104,16 @@ const handlePortfolioTitle = () =>
   }
 }
 
-uploadSkills();
-handlePortfolioTitle();
 
 
-const addProjects = () => 
+const addProjects = (projects) => 
 {
-
   const projects_made__worklist = document.querySelector('.projects_made__worklist')
-
-  const projects = [{
-    image: 'img/fashionHunter.png',
-    title:'Fashion Hunter',
-    repoLink:'https://github.com/MythOfSagar/fashion_hunter_project',
-    deployedLink:'https://fashion-hunter.netlify.app',
-    techStack:'React | Redux | Chakra UI | ExpressJS | MongoDB',
-    desc:`Fashion Hunter is an e-commerce website,
-    on which I have developed
-    admin page and a payment page.`
-  }];
-
   projects.forEach(({image,title,deployedLink,desc,techStack,repoLink}) => {
-    const el = 
-    document.createElement('div').innerHTML =
-    `<div class="individualProjects">
-    <div class="projects_made__worklist-work">
+    const individualProject =  document.createElement('div');
+    individualProject.className = 'individualProject';
+    individualProject.innerHTML =
+    `<div class="projects_made__worklist-work">
       <img src="${image}" alt="${title}" />
       <div class="projects_made__worklist-layer">
         <h2>${title}</h2>
@@ -197,13 +126,114 @@ const addProjects = () =>
           class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </div>
     <h4>${desc}</h4>
-    <h4><span>Tech Stack:</span>${techStack}</h4>
-  </div>`
+    <h4><span>Tech Stack:</span>${techStack}</h4>`
 
-  projects_made__worklist.append(el)
+  projects_made__worklist.append(individualProject)
   })
 
  
 }
 
-// addProjects()
+
+const projects = [
+  {
+    image: 'img/fashionHunter.png',
+    title: 'Fashion Hunter',
+    repoLink: 'https://github.com/MythOfSagar/fashion_hunter_project',
+    deployedLink: 'https://fashion-hunter.netlify.app',
+    techStack: 'React | Redux | Chakra UI | ExpressJS | MongoDB',
+    desc: `Fashion Hunter is an e-commerce website,
+  on which I have developed
+  admin page and a payment page.`
+  },
+  {
+    image: 'https://i.ibb.co/TYqLBMf/ICEMELON.png',
+    title: 'Ice Melon',
+    repoLink: 'https://github.com/MythOfSagar/ice_melon_project',
+    deployedLink: 'https://ice-melon.vercel.app',
+    techStack: 'NextJS | TypeScript | Chakra UI | ExpressJS | MongoDB',
+    desc: `Ice Melon is a blogging website that offers a
+    refreshing mix of diverse topics.`
+  },
+  {
+    image: 'img/indeed.png',
+    title: 'Indeed Clone',
+    repoLink: 'https://github.com/MythOfSagar/indeed_project',
+    deployedLink: 'https://strong-rolypoly-7a7c64.netlify.app',
+    techStack: 'HTML | CSS | JavaScript',
+    desc: `Indeed.com is Online Job and Recruitment Portal,
+    on which I have developed signup/login functionality.`
+  },
+  {
+    image: 'img/awakeFashion.png',
+    title: 'Awake Fashion',
+    repoLink: 'https://github.com/MythOfSagar/awake_fashion_project',
+    deployedLink: 'https://awake-fashion.netlify.app',
+    techStack: 'React | Redux | Chakra UI',
+    desc: `Awake Fashion is an e-commerce website,
+    on which I have developed
+    admin page and a payment page.`
+  }
+];
+
+const skills = [
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1024px-Typescript.svg.png",
+    title: "TypeScript",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png",
+    title: "JavaScript",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png",
+    title: "React",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+    title: "Angular",
+  },
+  {
+    img: "https://www.rlogical.com/wp-content/uploads/2023/03/Rlogical-Blog-Images-thumbnail-1.webp",
+    title: "NextJS"
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png",
+    title: "HTML",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/640px-CSS3_logo.svg.png",
+    title: "CSS",
+  },
+  {
+    img: "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
+    title: "Redux",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/640px-Node.js_logo.svg.png",
+    title: "NodeJS",
+  },
+  { img: "img/expressJs.png", title: "ExpressJS" },
+
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png",
+    title: "MongoDB",
+  },
+  {
+    img: "https://www.svgrepo.com/show/330247/cypress.svg",
+    title: "Cypress",
+  }
+  ,
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Git_format.png/640px-Git_format.png",
+    title: "Git",
+  },
+  {
+    img: "https://cdn.worldvectorlogo.com/logos/postman.svg",
+    title: "Postman",
+  }
+];
+
+handlePortfolioTitle();
+addSkills(skills);
+addProjects(projects);

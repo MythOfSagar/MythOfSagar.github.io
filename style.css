@@ -631,13 +631,13 @@ nav .fa-solid {
   cursor: pointer;
 }
 
-.individualProjects {
+.individualProject {
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.individualProjects a {
+.individualProject a {
   margin: auto;
   width: 100px;
 }
