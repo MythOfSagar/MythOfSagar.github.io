@@ -162,3 +162,48 @@ const handlePortfolioTitle = () =>
 
 uploadSkills();
 handlePortfolioTitle();
+
+
+const addProjects = () => 
+{
+
+  const projects_made__worklist = document.querySelector('.projects_made__worklist')
+
+  const projects = [{
+    image: 'img/fashionHunter.png',
+    title:'Fashion Hunter',
+    repoLink:'https://github.com/MythOfSagar/fashion_hunter_project',
+    deployedLink:'https://fashion-hunter.netlify.app',
+    techStack:'React | Redux | Chakra UI | ExpressJS | MongoDB',
+    desc:`Fashion Hunter is an e-commerce website,
+    on which I have developed
+    admin page and a payment page.`
+  }];
+
+  projects.forEach(({image,title,deployedLink,desc,techStack,repoLink}) => {
+    const el = 
+    document.createElement('div').innerHTML =
+    `<div class="individualProjects">
+    <div class="projects_made__worklist-work">
+      <img src="${image}" alt="${title}" />
+      <div class="projects_made__worklist-layer">
+        <h2>${title}</h2>
+      </div>
+    </div>
+    <div class="projectIcons">
+      <a title="Click to view Source Code" href="${repoLink}" target="_blank"><i
+          class="fa-brands fa-github"></i></a>
+      <h2>${title}</h2><a title="Click to Visit Website" href="${deployedLink}" target="_blank"><i
+          class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <h4>${desc}</h4>
+    <h4><span>Tech Stack:</span>${techStack}</h4>
+  </div>`
+
+  projects_made__worklist.append(el)
+  })
+
+ 
+}
+
+// addProjects()
