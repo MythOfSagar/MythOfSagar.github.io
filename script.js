@@ -60,7 +60,7 @@ const openResume = () =>
 const addSkills = (dataSkills) => 
 {
 
-  const skills_learnedlist = document.getElementById("skills_learnedDiv");
+  const skillsContainer = document.getElementById("skills_learnedDiv");
 
   dataSkills.map((skill) => 
   {
@@ -72,7 +72,7 @@ const addSkills = (dataSkills) =>
     image.setAttribute("src", skill.img);
 
     div.append(image, title);
-    skills_learnedlist.append(div);
+    skillsContainer.append(div);
   });
 }
 
