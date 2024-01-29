@@ -237,3 +237,14 @@ const skills = [
 handlePortfolioTitle();
 addSkills(skills);
 addProjects(projects);
+
+
+
+setTimeout(() => {
+  const LeetCodeStats_link = document.querySelector('.LeetCodeStats_link')
+  const img = document.createElement('img');
+  img.src = "https://leetcard.jacoblin.cool/MythOfSagar?theme=nord"
+  img.title = "Click to view LeetCode Profile"
+
+  LeetCodeStats_link.append(img)
+},1)
