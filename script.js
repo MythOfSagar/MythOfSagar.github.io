@@ -1,6 +1,7 @@
 
 
 const sideMenu = document.getElementById("sideMenu");
+const USERNAME = 'MythOfSagar'
 
 const openMenu = () => 
 {
@@ -80,13 +81,11 @@ const handlePortfolioTitle = () =>
 {
   const portfolioTitle = document.querySelector('#portfolio-title')
   const defaultTitle = 'Sagar'
-  console.log(document['hidden'],135)
   if (typeof document.hidden !== "undefined") 
   {
 
     const handleVisibilityChange = () => 
     {
-      console.log(document['hidden'])
       if (document['hidden']) 
       {
         portfolioTitle.innerText = 'The One U R Looking For'
@@ -104,7 +103,35 @@ const handlePortfolioTitle = () =>
   }
 }
 
+const assignLinks = (username) =>{
 
+  const githubProfile = document.querySelector('#githubProfile');
+  const leetcodeProfile = document.querySelector('#leetcodeProfile');
+  const linkedinProfile = document.querySelector('#linkedinProfile');
+
+  const githubCard1 = document.querySelector('#githubCard1');
+  const githubCard2 = document.querySelector('#githubCard2');
+
+  const leetcodeCard = document.querySelector('#leetcodeCard');
+
+  
+  githubProfile.setAttribute('href',`https://github.com/${username}`);
+  leetcodeProfile.setAttribute('href',`https://leetcode.com/${username}`);
+  linkedinProfile.setAttribute('href',`https://linkedin.com/in/${username}`);
+
+  githubCard1.setAttribute('src',`http://github-profile-summary-cards.vercel.app/api/cards/stats?username=${username}&theme=solarized_dark`);
+  githubCard2.setAttribute('src',`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&theme=solarized_dark`);
+
+  setTimeout(() => {
+    const img = document.createElement('img');
+
+    img.src = `https://leetcard.jacoblin.cool/${username}?theme=nord`
+    img.title = "Click to view LeetCode Profile"
+  
+    leetcodeCard.append(img)
+  },1)
+
+}
 
 const addProjects = (projects) => 
 {
@@ -139,7 +166,7 @@ const projects = [
   {
     image: 'img/fashionHunter.png',
     title: 'Fashion Hunter',
-    repoLink: 'https://github.com/MythOfSagar/fashion_hunter_project',
+    repoLink: `https://github.com/${USERNAME}/fashion_hunter_project`,
     deployedLink: 'https://fashion-hunter.netlify.app',
     techStack: 'React | Redux | Chakra UI | ExpressJS | MongoDB',
     desc: `Fashion Hunter is an e-commerce website,
@@ -149,7 +176,7 @@ const projects = [
   {
     image: 'https://i.ibb.co/TYqLBMf/ICEMELON.png',
     title: 'Ice Melon',
-    repoLink: 'https://github.com/MythOfSagar/ice_melon_project',
+    repoLink: `https://github.com/${USERNAME}/ice_melon_project`,
     deployedLink: 'https://ice-melon.vercel.app',
     techStack: 'NextJS | TypeScript | Chakra UI | ExpressJS | MongoDB',
     desc: `Ice Melon is a blogging website that offers a
@@ -158,7 +185,7 @@ const projects = [
   {
     image: 'img/indeed.png',
     title: 'Indeed Clone',
-    repoLink: 'https://github.com/MythOfSagar/indeed_project',
+    repoLink: `https://github.com/${USERNAME}/indeed_project`,
     deployedLink: 'https://strong-rolypoly-7a7c64.netlify.app',
     techStack: 'HTML | CSS | JavaScript',
     desc: `Indeed.com is Online Job and Recruitment Portal,
@@ -167,7 +194,7 @@ const projects = [
   {
     image: 'img/awakeFashion.png',
     title: 'Awake Fashion',
-    repoLink: 'https://github.com/MythOfSagar/awake_fashion_project',
+    repoLink: `https://github.com/${USERNAME}/awake_fashion_project`,
     deployedLink: 'https://awake-fashion.netlify.app',
     techStack: 'React | Redux | Chakra UI',
     desc: `Awake Fashion is an e-commerce website,
@@ -234,17 +261,10 @@ const skills = [
   }
 ];
 
+
+
+
 handlePortfolioTitle();
 addSkills(skills);
 addProjects(projects);
-
-
-
-setTimeout(() => {
-  const LeetCodeStats_link = document.querySelector('.LeetCodeStats_link')
-  const img = document.createElement('img');
-  img.src = "https://leetcard.jacoblin.cool/MythOfSagar?theme=nord"
-  img.title = "Click to view LeetCode Profile"
-
-  LeetCodeStats_link.append(img)
-},1)
+assignLinks(USERNAME);
