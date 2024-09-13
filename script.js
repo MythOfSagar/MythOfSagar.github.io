@@ -105,33 +105,40 @@ const handlePortfolioTitle = () =>
 
 const assignLinks = (username) =>{
 
-  const githubProfile = document.querySelector('#githubProfile');
-  const leetcodeProfile = document.querySelector('#leetcodeProfile');
-  const linkedinProfile = document.querySelector('#linkedinProfile');
+  const githubProfile = document.querySelectorAll('.githubProfile');
+  githubProfile.forEach(p=>{
+    p.setAttribute('href',`https://github.com/${username}`);
+  })
 
+  const linkedinProfile = document.querySelectorAll('.linkedinProfile');
+  linkedinProfile.forEach(p=>{
+    p.setAttribute('href',`https://linkedin.com/in/${username}`);
+  })
+
+  const leetcodeProfile = document.querySelectorAll('.leetcodeProfile');
+  leetcodeProfile.forEach(p=>{
+    p.setAttribute('href',`https://leetcode.com/${username}`);
+  })
+  
   const githubCard1 = document.querySelector('#githubCard1');
   const githubCard2 = document.querySelector('#githubCard2');
-
-  const leetcodeCard = document.querySelector('#leetcodeCard');
-
-  
-  githubProfile.setAttribute('href',`https://github.com/${username}`);
-  leetcodeProfile.setAttribute('href',`https://leetcode.com/${username}`);
-  linkedinProfile.setAttribute('href',`https://linkedin.com/in/${username}`);
 
   githubCard1.setAttribute('src',`http://github-profile-summary-cards.vercel.app/api/cards/stats?username=${username}&theme=solarized_dark`);
   githubCard2.setAttribute('src',`http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&theme=solarized_dark`);
 
   setTimeout(() => {
+  
     const img = document.createElement('img');
-
+  
     img.src = `https://leetcard.jacoblin.cool/${username}?theme=nord`
     img.title = "Click to view LeetCode Profile"
-  
+
+    const leetcodeCard = document.querySelector('.leetcodeCard');
     leetcodeCard.append(img)
   },1)
-
 }
+
+
 
 const addProjects = (projects) => 
 {
