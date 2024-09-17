@@ -115,6 +115,11 @@ const assignLinks = (username) =>{
     p.setAttribute('href',`https://linkedin.com/in/${username}`);
   })
 
+  const telegramProfile = document.querySelectorAll('.telegramProfile');
+  telegramProfile.forEach(p=>{
+    p.setAttribute('href',`https://t.me/${username}`);
+  })
+
   const leetcodeProfile = document.querySelectorAll('.leetcodeProfile');
   leetcodeProfile.forEach(p=>{
     p.setAttribute('href',`https://leetcode.com/${username}`);
