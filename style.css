@@ -178,9 +178,10 @@ header .contact__socials {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 22% 10px;
+  margin:0 10px;
   transition: all ease-in-out 0.5s;
   transform: 0.5s;
+  height: 100vh;
 }
 
 header .contact__socials a {
