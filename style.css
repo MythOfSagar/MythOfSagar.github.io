@@ -482,6 +482,7 @@ header .contact__socials i:hover {
   transition: 1s;
 }
 
+
 .projects_made__btn {
   display: block;
   margin: 50px auto;
@@ -504,6 +505,8 @@ header .contact__socials i:hover {
   display: flex;
   gap: 10px;
   width: 80%;
+  min-height: 5.5rem;
+  align-items: center;
   margin: auto;
 }
 
