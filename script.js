@@ -229,7 +229,7 @@ const skills = [
     title: "React",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
+    img: "https://images.seeklogo.com/logo-png/33/2/angular-logo-png_seeklogo-331629.png",
     title: "Angular",
   },
   {
@@ -279,4 +279,5 @@ const skills = [
 handlePortfolioTitle();
 addSkills(skills);
 addProjects(projects);
+
 assignLinks(USERNAME);
