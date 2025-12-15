@@ -258,11 +258,10 @@ const skills = [
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mongodb-svgrepo-com.svg/640px-Mongodb-svgrepo-com.svg.png",
     title: "MongoDB",
   },
-  {
-    img: "https://www.svgrepo.com/show/330247/cypress.svg",
-    title: "Cypress",
-  }
-  ,
+  // {
+  //   img: "https://www.svgrepo.com/show/330247/cypress.svg",
+  //   title: "Cypress",
+  // },
   {
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Git_format.png/640px-Git_format.png",
     title: "Git",
@@ -281,3 +280,4 @@ addSkills(skills);
 addProjects(projects);
 
 assignLinks(USERNAME);
+
