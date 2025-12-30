@@ -175,15 +175,15 @@ const projects = [
     techStack: 'React | TypeScript',
     desc: `Unlimited Cats: Where scrolling feels as endless as a cat's curiosity ! Dive into a purr-fectly delightful abyss of feline frolics and whisker wonders.`
   },
-  {
-    image: 'img/asos.png',
-    title: 'Asos',
-    repoLink: `https://github.com/${USERNAME}/asos_project`,
-    deployedLink: 'https://stirring-marzipan-5d4585.netlify.app',
-    techStack: 'HTML | CSS | JavaScript',
-    desc: `Asos is an e-commerce website. This website is an online shopping platform. 
-    We cloned this website the same as the original website..`
-  },
+  // {
+  //   image: 'img/asos.png',
+  //   title: 'Asos',
+  //   repoLink: `https://github.com/${USERNAME}/asos_project`,
+  //   deployedLink: 'https://stirring-marzipan-5d4585.netlify.app',
+  //   techStack: 'HTML | CSS | JavaScript',
+  //   desc: `Asos is an e-commerce website. This website is an online shopping platform. 
+  //   We cloned this website the same as the original website..`
+  // },
   {
     image: 'img/fashionHunter.png',
     title: 'Fashion Hunter',
@@ -280,4 +280,5 @@ addSkills(skills);
 addProjects(projects);
 
 assignLinks(USERNAME);
+
 
